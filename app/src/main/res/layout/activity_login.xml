@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg1"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="144dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homework" />
+
+    <EditText
+        android:id="@+id/activityLogin_txtUsername"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:background="#E6FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:inputType="textPersonName|text"
+        android:paddingStart="5sp"
+        android:paddingLeft="5sp"
+        android:paddingTop="2sp"
+        android:paddingEnd="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="2sp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/activityLogin_txtPassword"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:background="#E6FFFFFF"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="5sp"
+        android:paddingLeft="5sp"
+        android:paddingTop="2sp"
+        android:paddingEnd="5sp"
+        android:paddingRight="5sp"
+        android:paddingBottom="2sp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/activityLogin_txtUsername"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityLogin_txtUsername" />
+
+    <Button
+        android:id="@+id/login_activity_btn_login"
+        android:layout_width="157dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#000000"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/activityLogin_txtPassword"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activityLogin_txtPassword" />
+
+    <TextView
+        android:id="@+id/actLogin_labelLogin"
+        android:layout_width="174dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:textColor="#FFEA00"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/actLogin_labelNotLoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/not_registered_yet"
+        android:textColor="#FFFAFA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/actLogin_btnRegister"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/montserrat_subrayada"
+        android:text="@string/sign_up"
+        android:textColor="#FFD600"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/actLogin_labelNotLoggedIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/actLogin_labelNotLoggedIn"
+        app:layout_constraintTop_toTopOf="@+id/actLogin_labelNotLoggedIn"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <TextView
+        android:id="@+id/actLogin_txtLoginFailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#D50000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/actLogin_labelLogin"
+        app:layout_constraintStart_toStartOf="@+id/actLogin_labelLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:paddingStart="10sp"
+    android:paddingLeft="15sp"
+    android:paddingTop="10sp"
+    android:paddingEnd="10sp"
+    android:paddingRight="15sp"
+    android:paddingBottom="10sp"
+    tools:context=".EditTodoFragment">
+
+    <TextView
+        android:id="@+id/lblEditTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/monoton"
+        android:gravity="center"
+        android:text="@string/edit_todo"
+        android:textColor="#FFAB00"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:hint="@string/edit_title"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:height="150dp"
+        android:autofillHints=""
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:hint="@string/edit_description"
+        android:inputType="textMultiLine|textPersonName"
+        android:lines="5"
+        android:maxLines="5"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/edit_fragment_txt_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:autofillHints=""
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:hint="@string/edit_date"
+        android:inputType="date|textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/edit_fragment_rg_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/color_high"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/edit_high" />
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/color_medium"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/edit_medium" />
+
+        <RadioButton
+            android:id="@+id/edit_fragment_rb_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_low"
+            android:text="@string/edit_low" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/edit_fragment_chk_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/checkbox"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit_fragment_btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="#00C853"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/edit_save"
+            app:backgroundTint="#00C853" />
+
+        <Button
+            android:id="@+id/edit_fragment_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="#FF6D00"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/cancel"
+            app:backgroundTint="#FF6D00" />
+    </LinearLayout>
+
+</LinearLayout>
